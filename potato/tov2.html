@@ -5,9 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="x-rim-auto-match" content="none">
-	<title>Karto Farm</title>
+	<title>Удача</title>
 	<link rel="shortcut icon" href="img/index.png" type="image/png">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -15,7 +17,7 @@
 		<div class="head">
 			<div class="container">
 				<div class="col-md-4 col-sm-4 col-xs-6 lefta">
-						<img src="img/logo.png" alt="">	
+					<img src="img/logo.png" alt="">
 				</div>
 				<div class="col-md-4 col-sm-4 col-xs-6">
 					<a href="myModal" data-toggle="modal" class="btn-go" data-id="main.header.question">Задать вопрос</a>
@@ -28,256 +30,108 @@
 				</div>
 			</div>
 		</div>
-		<div class="head_bg">
+		<div class="tov">
 			<div class="container">
-				<h1>Картофель по сортам от приморских<br> фермеров и крестьянских хозяйств!</h1>
-				<a href="myModal" data-toggle="modal" class="btn-go" data-id="main.firstframe">Заказать</a>
+				<div class="col-md-6 col-sm-6">
+					<div id="tov-img" class="tov-img">
+						<div><img src="img/ris1.jpg" alt=""></div>
+						<div><img src="img/ris3.jpg" alt=""></div>
+						
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6 center">
+					<h2>Картофель «Удача»</h2>
+					<ul>
+						<li>Быстро разваривается</li>
+						<li>Не прилипает к небу</li>
+						<li>Дешевая цена</li>
+						<li>Лечит простату</li>
+						<li>Хорошо пахнет</li>
+						<li>Выводит камни из почек</li>
+					</ul>
+					<a href="myModal" data-toggle="modal" class="btn-go" data-id="tov.firstframe">Заказать</a>
+				</div>
 			</div>
 		</div>
 	</header>
-	<section class="sorts">
+	<section class="opisanie">
 		<div class="container">
-		<h2>Какие сорта</h2>
-			<div class="col-5">
-			    <a href="tov.html">
-				<div class="sort">
-					<div class="img-krug">
-						<img src="img/sort2.png" alt="">
-					</div>
-					<span class="nazv-sort">Адретта</span>
-				</div>
-				</a>
-			</div>
-			<div class="col-5">
-			    <a href="tov1.html">
-				<div class="sort">
-					<div class="img-krug">
-						<img src="img/sort1.png" alt="">
-					</div>
-					<span class="nazv-sort">Санте</span>
-				</div>
-				</a>
-			</div>
-			<div class="col-5">
-			    <a href="tov2.html">
-				<div class="sort">
-					<div class="img-krug">
-						<img src="img/sort.png" alt="">
-					</div>
-					<span class="nazv-sort">Удача</span>
-				</div>
-				</a>
-			</div>
-			<div class="col-5">
-			    <a href="tov3.html">
-				<div class="sort">
-					<div class="img-krug">
-						<img src="img/sort2.png" alt="">
-					</div>
-					<span class="nazv-sort">Янтарь</span>
-				</div>
-				</a>
-			</div>
-			<div class="col-5">
-			    <a href="tov4.html">
-				<div class="sort">
-					<div class="img-krug">
-						<img src="img/sort1.png" alt="">
-					</div>
-					<span class="nazv-sort">Розара</span>
-				</div>
-				</a>
-			</div>
-		</div>
-	</section>
-	<section class="time-zakaz">
-		<div class="container">
-			<h2>Когда можно заказать?</h2>
-			<p>Уже начался сбор и продлися до конца октября<br>
-			 в зависимости от сорта и района выращивания (смотри<br>
-			 информицию по сортам выше).</p>
-		</div>
-	</section>
-	<section class="how-it-work">
-		<div class="container">
-			<h2>Как заказать?</h2>
-			<div class="cont">
-				<div class="col-5">
-					<img src="img/phone.png" alt=""><br>
-					<p class="right-st">Оставляйте заявку или звоните</p>
-				</div>
-				<div class="col-5">
-					<img src="img/dots.png" class="hidden-xs" alt="">
-				</div>
-				<div class="col-5">
-					<img src="img/dial.png"  alt=""><br>
-					<p class="left-st">Консультируйтесь</p>
-				</div>
-				<div class="col-5">
-					<img src="img/dots.png" class="hidden-xs" alt="">
-				</div>
-				<div class="col-5">
-					<img src="img/arms.png"  alt=""><br>
-					<p>Просто звоните — познакомимся<br> и будем дружить =)</p>
-				</div>
-			</div>
-			<a href="myModal" data-toggle="modal" class="btn-go"  data-id="main.how">Заказать</a>
-		</div>
-	</section>
-	<section class="who">
-		<div class="container">
-		<h2>Кто мы и наши фермеры?</h2>
-			<div class="row">
-			<div class="col-md-4">
-							<div class="whos"><div class="img-whos"><img src="img/gerb.png" alt=""></div><br>
-							<p>Департамент<br> приморского края</p></div>
-						</div>
-						<div class="col-md-4">
-							<div class="whos"><div class="img-whos"><img src="img/town.png" alt=""></div><br>
-							<p>Оптово-распределительный <br>центр «Приморский»</p></div>
-						</div>
-						<div class="col-md-4">
-							<div class="whos"><div class="img-whos"><img src="img/traktor.png" alt=""></div><br>
-							<p>Фермеры и крестьянские хозяйства <br>приморского края</p></div>
-						</div>
-			</div>	
+			<h2>Особенности сорта</h2>
+			<p>Достаточно рассыпчатая мякоть картофеля Удача позволяет готовить из него превосходное пюре. Жареный картофель хорошо сохраняет форму, всегда аппетитно выглядит и очень вкусен.</p>
 
-			<div class="cont-s">
-				<h3>Команда специалистов по приему заявок:</h3>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="peop">
-							<div class="img-div">
-							<img src="img/alex.png" alt="">
-							</div>
-							<span>Алексей</span>
-							<p>работа с фермерами</p>
-						</div>
+            <p>Сорт устойчив к переувлажнению, мокрым и сухим гнилям, раку, парше, мозаичным вирусам, фитофторозу клубней, ризоктониозу, механическим повреждениям. Восприимчив к золотистой картофельной нематоде, альтернариозу и фитофторозу по ботве.</p>
+
+            <p>Данная разновидность корнеплода при создании оптимальных условий может довольно долго храниться – не загнивая и не прорастая. Это важно, если вы собираетесь делать запасы овощей на целую зиму вперед.</p>
+        </div>
+	</section>
+	
+	<section class="fermers">
+		<div class="container">
+			<h2>Фермеры</h2>
+			<div class="table">
+				<div class="head-col">
+					<div class="name">ФИО</div>
+					<div class="dist">Район</div>
+					<div class="date">Дата сбора урожая</div>
+					<div class="strok">ФИО / Район / Дата сбора урожая</div>
+				</div>
+				<div class="col">
+					<div class="name">
+					    <p>ИП ГКФХ Менюк И.Д. </p>
+					<div class="dist">С. Многоудобное</div>
+					<div class="date">21.02.2017 - 23.05.2017</div>
+				</div>
+				<div class="col">
+					<div class="name">
+						<p>ИП ГКФХ Артыкова Г.А</p>
 					</div>
-					<div class="col-md-4">
-						<div class="peop">
-							<div class="img-div">
-							<img src="img/zanka.png" alt="">
-							</div>
-							<span>Жанна</span>
-							<p>Прием заявок</p>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="peop">
-							<div class="img-div">
-							<img src="img/vanya.png" alt="">
-							</div>
-							<span>Иван</span>
-							<p>Прием заявок</p>
-						</div>
-					</div>
-				</div>	
+					<div class="dist">г. Уссурийск</div>
+					<div class="date">21.02.2017 - 23.05.2017</div>
+				</div>
 			</div>
-			<a href="myModal" data-toggle="modal" class="btn-go" data-id="main.who">Заказать</a>
 		</div>
 	</section>
-	<section class="why-me">
+	<section class="otzivi">
 		<div class="container">
-		<h2>Почему стоит нам доверять?</h2>
-			<div class="row"><div class="col-md-3 col-sm-6">
-							<div class="preim">
-							<div class="preim-img">
-							<img src="img/p1.png" alt="">
-							</div>
-							<p>Вся продукция только от местных<br>
-							приморских фермерских и крестьянских<br>
-							хозяйств! Никакой китайской продукции<br>
-							или выпускаемой гастрабайтерами на<br>
-							территории приморского края</p></div>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<div class="preim">
-							<div class="preim-img">
-							<img src="img/p2.png" alt="">
-							</div>
-							<p>Только натуральная продукция! Без<br>
-							гармонов роста и нитратных удобрений,<br>
-							 применяемых в китайской продукции<br>
-							  или фуражной алтайской</p></div>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<div class="preim">
-							<div class="preim-img">
-							<img src="img/p3.png" alt="">
-							</div>
-							<p>Только сортовой картофель, который<br>
-							 выращивается, храниться и продается <br>
-							 по сортам! Без пересортици</p></div>
-						</div>
-						<div class="col-md-3 col-sm-6">
-							<div class="preim">
-							<div class="preim-img">
-							<img src="img/p4.png" alt="">
-							</div>
-							<p>Только свежий картофель урожая 2017<br>
-							 года! Никакого смещивания с урожаем<br> прошлого года</p></div>
-						</div>
-			</div>
-		<div class="row">
-			<div class="col-md-3 col-sm-6">
-				<div class="preim">
-				<div class="preim-img">
-				<img src="img/p5.png" alt="">
+			<h2>Отзывы</h2>
+			<div class="row">
+			<div class="col-md-6 col-sm-6 col-xs-12">
+				<div class="otziv">
+				<div class="otz-img">
+					<img src="img/otz-img.png"  alt="">
 				</div>
-				<p>Картофель храниться в идеальных<br>
-				 условиях и сохраниться всю зиму! Не<br>
-				 убытый заморозкой или сваривщийся в<br>
-				 жаре, и не активированный теплом и<br>
-				 влагой. Только идеальные условия<br>
-				 хранения у нас и наших партнеров</p></div>
+				<img src="img/otz-kav.png" class="kav" alt="">
+				<p>«Удача» — белый, очень красивый сорт. Лучше подходит для жарки, и чтобы в духовку запечь</p></div>
 			</div>
-			<div class="col-md-3 col-sm-6">
-				<div class="preim">
-				<div class="preim-img">
-				<img src="img/p6.png" alt="">
+			<div class="col-md-6 col-sm-6 col-xs-12">
+				<div class="otziv">
+				<div class="otz-img">
+					<img src="img/otz-img.png" alt="">
 				</div>
-				<p>Качество гарантированно сертификатами<br>
-				 ФГБУ РосСельхозЦентра! Весь процесс сертификации контролируется от<br>
-				 момента приобретения семенного фонда,<br>
-				 проверки проб на полях, до клубневого <br>
-				 анализа вращенного урожая</p></div>
+				<img src="img/otz-kav.png" class="kav" alt="">
+				<p>Картофель этот очень вкусный. И хранится очень хорошо в погребе. </p></div>
 			</div>
-			<div class="col-md-3 col-sm-6">
-				<div class="preim">
-				<div class="preim-img">
-				<img src="img/p7.png" alt="">
+			<div class="col-md-6 col-sm-6 col-xs-12">
+				<div class="otziv">
+				<div class="otz-img">
+					<img src="img/otz-img.png" alt="">
 				</div>
-				<p>Консультация по свойствам каждого<br>
-				 сорта! Можем подсказать какой <br>
-				 картофель лучше варить, какой жарить, у <br>
-				какого лучше вкусовые качества, какой<br>
-				 лучше подойдет для общепита и т.п.</p></div>
+				<img src="img/otz-kav.png" class="kav" alt="">
+				<p>Картофель сорта Удача — класс! Достоинства: хороший урожай, жароустойчив. Недостатки: раскидистая ботва. Этот сорт картофеля я приобрёл 4 года назад и решил его посадить, так, для интереса. Собрал очень хороший урожай. Теперь каждый ход выращиваю его на своём приусадебном участке. </p></div>
 			</div>
-			<div class="col-md-3 col-sm-6">
-				<div class="preim">
-				<div class="preim-img">
-				<img src="img/p8.png" alt="">
-				</div>
-				<p>Гарантия оптовых цен! Продукция <br>
-				заказывается напрямую у фермеров, что<br>
-				 позволяет убрать расходы цепочки<br>
-				 посредников и перекупщиков на<br>
-				 оптовых базах</p></div>
 			</div>
-		</div>
-		<a href="myModal" data-toggle="modal" class="btn-go" data-id="main.why">Заказать</a>
+			
+			<a href="myModal" data-toggle="modal" class="btn-go" data-id="tov.review">Заказать</a>
 		</div>
 	</section>
 	<footer>
 		<div class="container">
-			<div class="col-md-4 col-sm-4"><a href="Mpolitika" data-toggle="modal" id="politika">Политика конфиденциальности</a></div>
-			<div class="col-md-4 col-sm-4">© ООО "Агрологистика"</div>
-			<div class="col-md-4 col-sm-4"><a href="">Связаться с нами</a></div>
+			<div class="col-md-4"><a href="Mpolitika" data-toggle="modal" id="politika" >Политика конфиденциальности</a></div>
+			<div class="col-md-4">© ООО "Агрологистика"</div>
+			<div class="col-md-4">Связаться с нами</div>
 		</div>
 	</footer>
 </body>
-
 <div id="myModal" class="modal fade">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -297,14 +151,13 @@
     </div>
   </div>
 </div>
-
 <div id="Mpolitika" class="modal fade">
   <div class="modal-dialog">
     <div class="modal-content">
       <!-- Заголовок модального окна -->
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
-      <br>
+      <br> 
         <p>Политика в отношении обработки персональных данных определяет основные принципы и правила по обработке персональных данных, которыми мы руководствуемся в нашей работе, а также в общении с клиентами, поставщиками и сотрудниками. Политика в отношении обработки персональных данных распространяется на всех наших сотрудников.</p>
 
 <p>При обработке персональных данных мы стремимся соблюдать требования законодательства Российской Федерации, в частности Федеральный закон № 152-ФЗ «О персональных данных», а также нормы и правила, установленные в нашей компании.</p>
@@ -332,7 +185,6 @@
 Мы настоятельно рекомендуем вам принимать все возможные меры предосторожности во время пребывания в интернете.
 Организованные нами услуги и сайты предусматривают меры по защите от утечки, несанкционированного использования и изменения информации, которую мы контролируем. Несмотря на то, что мы делаем все возможное, чтобы обеспечить целостность и безопасность своей сети и систем, мы не можем гарантировать, что наши меры безопасности предотвратят незаконный доступ к этой информации хакеров сторонних организаций.</p>
 <p>Для связи с администратором сайта по любым вопросам вы можете написать письмо на e-mail: zakaz@karto.farm</p>
-
       </div>
     </div>
   </div>
@@ -340,16 +192,26 @@
 
 
 <script src="js/jquery-3.1.1.js"></script>
-<script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>
+<script>
+$(document).ready(function(){
+  $('.tov-img').slick({
+  	infinite: true,
+  	slidesToShow: 1,
+  	slidesToScroll: 1,
+  	prevArrow: '<button type="button" class="slick-prev slick-arrow"><img src="img/str-prev.png"></button>',
+  	nextArrow: '<button type="button" class="slick-next slick-arrow"><img src="img/str-next.png"></button>'
+  });
+});
+</script>
 
 <script>
   $("#politika").click(function() {
     $("#Mpolitika").modal('show');
-     
   });
 </script>
-
 <script>
   $(".btn-go").click(function() {
     $("#myModal").modal('show');
@@ -357,14 +219,6 @@
      console.log(id);
   });
 </script>
-
-<script type="text/javascript">
-   jQuery(function($){
-   $("#phone").mask("+9(999) 999-9999");
-  
-   });
-</script>
-
 <script type="text/javascript">
 $('#gform-jquery-php .btn-go').click(function(){
     var  send = true;
@@ -380,4 +234,3 @@ $('#gform-jquery-php .btn-go').click(function(){
 </script>
 
 </html>
-

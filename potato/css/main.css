@@ -1,12 +1,12 @@
 @font-face {
   font-family: ps;
-  src: url(../fonts/PT_Sans.ttf) format("truetype");
+  src: url(../fonts/PT_Sans.ttf) format("truetype"),url(../fonts/PT_Sans_Regular.woff) format("woff");
   font-style: normal;
   font-weight: 400;
 }
 @font-face {
   font-family: psb;
-  src: url(../fonts/PT_Sans_Bold.ttf) format("truetype");
+  src: url(../fonts/PT_Sans_Bold.ttf) format("truetype"),url(../fonts/PT_Sans_Bold.woff) format("woff");
   font-style: normal;
   font-weight: 400;
 }
@@ -18,7 +18,7 @@
 }
 @font-face {
   font-family: psi;
-  src: url(../fonts/PT_Sans_Italic.ttf) format("truetype");
+  src: url(../fonts/PT_Sans_Italic.ttf) format("truetype"),url(../fonts/PT_Sans_Italic.woff) format("woff");
   font-style: normal;
   font-weight: 400;
 }
@@ -64,7 +64,8 @@ body{
 text-align: left;
 }
 header .lefta img{
-padding-top: 20px;
+  padding-top: 20px;
+  max-width: 240px;
 }
 .btn-go{
   font-family: ps;
@@ -165,8 +166,9 @@ header .head{
 }
 header .head_bg{
   min-height: 582px;
-  background: url(../img/bg1.png);
+  background: url(../img/bg1_lite.jpg);
   background-size: cover;
+  background-position: center;
 }
 header h1{
   margin-top: 195px;
@@ -191,7 +193,10 @@ header h1{
 
 }
 .sorts{
-  min-height: 709px;
+  min-height: 450px;
+}
+.sorts a:hover{
+  color:#005a1e;
 }
 .sorts h2{
   margin:56px auto; 
@@ -216,7 +221,7 @@ header h1{
 
 .time-zakaz{
   min-height: 425px;
-  background: url(../img/bg2.png);
+  background: url(../img/bg2_lite.jpg);
   background-size: cover;
   color: #fff;
 
@@ -445,6 +450,17 @@ margin-bottom: 50px;
 
   
 }
+
+.table .name{
+  font-weight: 600;
+}
+.table .date{
+  color: #d4a700;
+}
+.head-col .date{
+  color: #fff;
+}
+
 .table .name,
 .table .dist,
 .table .date{
@@ -495,6 +511,15 @@ margin-bottom: 50px;
   padding: 0px 5px;
 }
 }
+@media (max-width: 1200px) {
+.sorts .sort .img-krug{
+      width: 100%;
+      height: 100%;
+    }
+  .who .btn-go{
+    margin-bottom: 50px;
+  }
+  }
 @media (max-width: 768px) {
   header .head img,
   header .head .btn-go{
@@ -516,9 +541,7 @@ margin-bottom: 50px;
 
 
 
-  .who .btn-go{
-    margin-bottom: 50px;
-  }
+  
 
   .otzivi .otziv .otz-img{
     width: 80px;
@@ -641,12 +664,7 @@ margin-bottom: 50px;
   padding-top: 25px;
   padding-bottom: 25px; 
 }
-.table .name{
-  font-weight: 600;
-}
-.table .date{
-  color: #d4a700;
-}
+
 
 
 
@@ -708,6 +726,10 @@ form input{
   border-radius: 10px;
   padding: 10px;
   margin: 10px auto;
+}
+form input .none{
+  border:5px solid red;
+  
 }
 form textarea{
   width: 100%;
